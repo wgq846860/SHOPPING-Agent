@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#131a24">
+  <title>Agent Shopping｜EarHub 耳机商城</title>
+  <link rel="icon" href="/static/img/agent-icon.png">
+  <link rel="stylesheet" href="/static/css/main.css?v=20261004-s43">
+</head>
+<body data-page="agent">
+
+  <a class="sr-only" href="#main">跳到主要内容</a>
+
+  <div class="topbar">
+    <div class="wrap">
+      <span>EarHub 耳机商城 · 本地演示站点</span>
+      <span class="topbar-spacer"></span>
+      <span class="topbar-badge">模拟数据</span>
+      <a href="/">返回传统购物</a>
+      <a href="#">帮助中心</a>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="wrap header-main">
+      <a class="brand" href="/">
+        <span class="brand-mark" aria-hidden="true">E</span>
+        <span class="brand-text">
+          <span class="brand-name">EarHub</span>
+          <span class="brand-sub">耳机商城</span>
+        </span>
+      </a>
+
+      <form class="search" role="search" method="get" action="/">
+        <select class="search-scope" name="sub_category" aria-label="选择商品品类">
+          <option value="">全部耳机</option>
+          <option value="over_ear_headphones">头戴式耳机</option>
+          <option value="on_ear_headphones">贴耳式耳机</option>
+          <option value="true_wireless_earbuds">真无线耳塞</option>
+          <option value="gaming_headsets">游戏耳机</option>
+          <option value="wired_headphones">有线耳机</option>
+        </select>
+        <input id="search-input" type="search" name="q" placeholder="也可以直接用搜索浏览商品" autocomplete="off">
+        <button class="search-btn" type="submit" aria-label="搜索">⌕</button>
+      </form>
+
+      <div class="header-actions">
+        <a class="header-action" href="#">
+          <span class="ha-label">你好，请登录</span>
+          <span>账户与列表</span>
+        </a>
+        <a class="header-action" href="#">
+          <span class="ha-label">购物车</span>
+          <span>🛒<span class="cart-count">0</span></span>
+        </a>
+      </div>
+    </div>
+
+    <nav class="catbar" aria-label="商品分类">
+      <div class="wrap">
+        <a class="cat" href="/">全部</a>
+        <a class="cat" href="/?sub_category=over_ear_headphones">头戴式耳机</a>
+        <a class="cat" href="/?sub_category=true_wireless_earbuds">真无线耳塞</a>
+        <a class="cat" href="/?sub_category=gaming_headsets">游戏耳机</a>
+        <span class="cat-divider" aria-hidden="true"></span>
+        <a class="cat cat-agent active" href="/agent-shopping.html" aria-current="page"><span class="agent-mark" aria-hidden="true"></span>Agent Shopping</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="wrap page agent-page" id="main">
+
+    <section class="agent-head">
+      <div class="agent-head-icon" aria-hidden="true"><span class="agent-mark" aria-hidden="true"></span></div>
+      <p class="hero-eyebrow" style="color:var(--muted)">EarHub · Agent Shopping</p>
+      <h1>说说你想怎么听。</h1>
+    </section>
+
+    <section class="section">
+      <div class="agent-panel">
+        <div class="agent-panel-head">
+          <span class="agent-dot on" aria-hidden="true"></span>
+          <span>购物需求</span>
+        </div>
+
+        <div class="agent-form">
+          <form id="agent-form">
+            <label for="agent-query">描述你的耳机需求</label>
+            <textarea id="agent-query" class="agent-input" name="query" maxlength="2000" required aria-describedby="agent-query-hint" placeholder="例如：我想买一副 800 元以内的无线降噪耳机，主要通勤使用，希望续航长一点，不要太重。"></textarea>
+            <div class="agent-form-foot">
+              <button class="btn btn-primary" type="submit"><span class="agent-mark" aria-hidden="true"></span>查找符合条件的耳机</button>
+              <span class="agent-hint" id="agent-query-hint">预算按到手价计算，硬性条件由本地数据核验。</span>
+            </div>
+          </form>
+
+          <div class="agent-status" id="agent-status" role="alert" aria-live="assertive" hidden></div>
+
+          <h2 class="agent-examples-title">示例需求</h2>
+          <ul class="example-list" id="example-list"></ul>
+        </div>
+
+        <div class="agent-foot">
+          <span>数据来源：本地模拟数据</span>
+          <span aria-hidden="true">·</span>
+          <span>筛选与排序：后端计算</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>推荐结果</h2>
+        <span class="agent-mode" id="agent-result-mode">等待请求</span>
+      </div>
+
+      <div class="agent-panel">
+        <div class="agent-panel-head">
+          <span class="agent-dot" aria-hidden="true"></span>
+          <h3 class="agent-result-heading" id="agent-result-title">等待需求输入</h3>
+        </div>
+        <div class="agent-result-content" id="agent-result-content" aria-live="polite" aria-atomic="true" aria-busy="false">
+          <p class="agent-empty-result">等待提交购物需求。</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <a class="back-top" href="#main">返回顶部</a>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-cols">
+        <div>
+          <h3>传统购物</h3>
+          <ul>
+            <li><a href="/">浏览全部耳机</a></li>
+            <li><a href="/?sub_category=over_ear_headphones">头戴式耳机</a></li>
+            <li><a href="/?sub_category=true_wireless_earbuds">真无线耳塞</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>数据说明</h3>
+          <ul>
+            <li><span>模拟数据 · 本地演示</span></li>
+            <li><span>结构化条件与事实解释</span></li>
+            <li><span>不展示模型内部思维链</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3>关于本演示</h3>
+          <ul>
+            <li><a href="/api/health">服务健康检查</a></li>
+            <li><span>本地运行 · 仅监听 127.0.0.1</span></li>
+            <li><span>不展示模型内部思维链</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 EarHub 耳机商城 · 本地演示</span>
+        <span class="sim">商品与推荐来自本地模拟数据，不代表真实市场结果。</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/static/js/app.js?v=20261004-s43"></script>
+  <script src="/static/js/agent.js?v=20261004-s43"></script>
+</body>
+</html>

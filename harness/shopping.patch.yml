@@ -1,0 +1,33 @@
+# =============================================================================
+# S3.1 购物 profile — 静态叠加层（patch overlay）
+# -----------------------------------------------------------------------------
+# 用途：在 sdk-minimal 模板之上关闭编程/终端/子进程能力与 DeepSeek 会话
+# 日志上传，购物会话只保留模型调用与工具服务。这是"购物 profile 限定
+# 工具能力"的最小权限形态（deepseek_harness_integration.md §6）。
+# 应用方式：由 backend/agent/harness_client.py 组合 overlay 后经 SDK
+# patches 参数叠加，并配合动态插入的本地购物工具插件
+# （harness/shopping-tools.cjs，凭 AGENT_BRIDGE_TOKEN 注入）。
+# 注意：逐版本核对遥测/日志插件是接入验收项，本清单以 0.1.5rc1 实测为准。
+# =============================================================================
+
+- id: sandbox
+  disabled: true
+- id: sandbox-policy
+  disabled: true
+- id: subprocess
+  disabled: true
+- id: pty
+  disabled: true
+- id: terminal-bash
+  disabled: true
+- id: terminal-pwsh
+  disabled: true
+- id: persistent-bash
+  disabled: true
+- id: persistent-pwsh
+  disabled: true
+- id: jobs
+  disabled: true
+- id: session-log-deepseek
+  config:
+    enabled: false

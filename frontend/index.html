@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#131a24">
+  <title>EarHub 耳机商城｜传统购物</title>
+  <link rel="icon" href="/static/img/agent-icon.png">
+  <link rel="stylesheet" href="/static/css/main.css?v=20261003-s41-fix">
+</head>
+<body data-page="home">
+
+  <a class="sr-only" href="#main">跳到主要内容</a>
+
+  <!-- ============================ 顶部信息条 ============================ -->
+  <div class="topbar">
+    <div class="wrap">
+      <span>EarHub 耳机商城 · demo版</span>
+      <span class="topbar-spacer"></span>
+      <span class="topbar-badge">模拟数据</span>
+      <a href="/agent-shopping.html">Agent Shopping</a>
+      <a href="#">帮助中心</a>
+    </div>
+  </div>
+
+  <!-- ============================ 主导航 ============================ -->
+  <header class="site-header">
+    <div class="wrap header-main">
+      <a class="brand" href="/">
+        <span class="brand-mark" aria-hidden="true">E</span>
+        <span class="brand-text">
+          <span class="brand-name">EarHub</span>
+          <span class="brand-sub">耳机商城</span>
+        </span>
+      </a>
+
+      <form class="search" role="search" method="get" action="/">
+        <select class="search-scope" name="sub_category" aria-label="选择商品品类">
+          <option value="">全部耳机</option>
+          <option value="over_ear_headphones">头戴式耳机</option>
+          <option value="on_ear_headphones">贴耳式耳机</option>
+          <option value="true_wireless_earbuds">真无线耳塞</option>
+          <option value="wireless_earbuds">无线耳塞</option>
+          <option value="gaming_headsets">游戏耳机</option>
+          <option value="wired_headphones">有线耳机</option>
+        </select>
+        <input id="search-input" type="search" name="q" placeholder="搜索品牌、型号或关键词，例如「降噪 通勤」" autocomplete="off">
+        <button class="search-btn" type="submit" aria-label="搜索">⌕</button>
+      </form>
+
+      <div class="header-actions">
+        <a class="header-action" href="#">
+          <span class="ha-label">你好，请登录</span>
+          <span>账户与列表</span>
+        </a>
+        <a class="header-action" href="#">
+          <span class="ha-label">演示阶段</span>
+          <span>订单</span>
+        </a>
+        <a class="header-action" href="#">
+          <span class="ha-label">购物车</span>
+          <span>🛒<span class="cart-count">0</span></span>
+        </a>
+      </div>
+    </div>
+
+    <!-- 分类条 -->
+    <nav class="catbar" aria-label="商品分类">
+      <div class="wrap">
+        <a class="cat active" href="/">全部</a>
+        <a class="cat" href="/?sub_category=over_ear_headphones">头戴式耳机</a>
+        <a class="cat" href="/?sub_category=true_wireless_earbuds">真无线耳塞</a>
+        <a class="cat" href="/?sub_category=gaming_headsets">游戏耳机</a>
+        <a class="cat" href="/?sub_category=wired_headphones">有线耳机</a>
+        <span class="cat-divider" aria-hidden="true"></span>
+        <a class="cat cat-agent" href="/agent-shopping.html"><span class="agent-mark" aria-hidden="true"></span>Agent Shopping</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ============================ Agent 入口横幅 ============================ -->
+  <section class="agent-strip" aria-label="Agent Shopping 入口">
+    <div class="wrap">
+      <span class="agent-strip-icon" aria-hidden="true"><span class="agent-mark" aria-hidden="true"></span></span>
+      <div class="agent-strip-copy">
+        <strong>Agent Shopping — 智能体商品选购</strong>
+        <span>便捷-高效-精准</span>
+      </div>
+      <a class="agent-strip-btn" href="/agent-shopping.html">开始对话 <span aria-hidden="true">→</span></a>
+    </div>
+  </section>
+
+  <main class="wrap page" id="main">
+
+    <!-- ============================ Hero ============================ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="hero-eyebrow">EarHub耳机特卖</p>
+        <h1 id="hero-title">Shaping the Future of Audio，<br>Hear What You Want.</h1>
+        <p class="hero-text">
+          头戴式、真无线、游戏耳机、有线监听等热销中！！！。
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-light" href="#browse">浏览全部耳机</a>
+          <a class="btn btn-ghost-light" href="/agent-shopping.html"><span class="agent-mark" aria-hidden="true"></span>让 Agent 帮我选</a>
+        </div>
+        <div class="hero-meta">
+          <span><b>多商家报价</b> 逐条列出到手价</span>
+          <span><b>本地虚拟数据集</b> 商品与商家为演示数据</span>
+          <span><b>Agent Shopping</b> 自然语言购物入口</span>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <!-- UI-REV-02：🎧 emoji 为回退占位；headphone3d.js 挂载成功后替换为可拖动旋转的 3D 模型 -->
+        <div class="hero-phone" id="hero-phone">🎧</div>
+      </div>
+    </section>
+
+    <!-- ============================ 商品浏览 ============================ -->
+    <section id="browse">
+      <div class="shop-layout">
+
+        <!-- 左侧筛选栏（由 app.js 渲染） -->
+        <div id="filters-mount"></div>
+
+        <div class="results" id="results-region" aria-busy="false">
+          <div class="results-bar">
+            <span class="results-count" id="results-count"></span>
+            <span class="spacer"></span>
+            <label class="sort-label" for="sort-select">排序：</label>
+            <select class="sort-select" id="sort-select">
+              <option value="relevance">默认排序</option>
+              <option value="price_asc">价格：从低到高</option>
+              <option value="price_desc">价格：从高到低</option>
+              <option value="rating_desc">顾客评分：从高到低</option>
+            </select>
+          </div>
+
+          <div class="request-status" id="request-status" role="status" aria-live="polite" hidden></div>
+          <div class="active-filters" id="active-filters"></div>
+
+          <ul class="product-grid" id="product-grid" aria-live="polite"></ul>
+          <div id="pager-mount"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================ 说明区 ============================ -->
+    <section class="section">
+      <div class="section-head">
+        <h2>这个站点现在能做什么</h2>
+        <span style="color:var(--muted);font-size:12px">当前功能</span>
+      </div>
+      <div class="info-grid">
+        <article class="info-card">
+          <span class="info-num">01</span>
+          <h3>传统购物路径</h3>
+          <p>浏览、搜索、筛选、分页与多商家报价由后端 <code>/api/products</code> 确定性逻辑提供；展示价、价格筛选与价格排序复用同一到手价规则。</p>
+        </article>
+        <article class="info-card">
+          <span class="info-num">02</span>
+          <h3>Agent Shopping 入口</h3>
+          <p>Agent 会将自然语言需求交给后端筛选与排序；页面按本次结果展示推荐商家、商品与报价权重及事实取舍。无结果或需要澄清时会如实显示。</p>
+        </article>
+        <article class="info-card">
+          <span class="info-num">03</span>
+          <h3>尚不可用的功能</h3>
+          <p>本版没有支付、结算、账号与订单。加入购物车、收藏、登录等按钮仅为版式演示，点击不会产生任何数据。</p>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <a class="back-top" href="#main">返回顶部</a>
+
+  <!-- ============================ 页脚 ============================ -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-cols">
+        <div>
+          <h3>选购</h3>
+          <ul>
+            <li><a href="/?sub_category=over_ear_headphones">头戴式耳机</a></li>
+            <li><a href="/?sub_category=true_wireless_earbuds">真无线耳塞</a></li>
+            <li><a href="/?sub_category=gaming_headsets">游戏耳机</a></li>
+            <li><a href="/?sub_category=wired_headphones">有线耳机</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>购物方式</h3>
+          <ul>
+            <li><a href="/agent-shopping.html"><span class="agent-mark" aria-hidden="true"></span>Agent Shopping</a></li>
+            <li><a href="/product.html?id=P001">商品详情与多商家报价</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>关于本演示</h3>
+          <ul>
+            <li><a href="/api/health">服务健康检查</a></li>
+            <li><span>本地运行 · 仅监听 127.0.0.1</span></li>
+            <li><span>耳机单一品类 Demo</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 EarHub 耳机商城 · 本地演示</span>
+        <span class="sim">数据来自本地虚拟演示数据集，非真实交易信息。</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/static/js/products.js?v=20261003"></script>
+  <script src="/static/js/app.js?v=20261003-s41-fix"></script>
+  <!-- UI-REV-02：Hero 区 3D 耳机（three.js 本地 vendor，无需联网） -->
+  <script type="importmap">
+    { "imports": { "three": "/static/js/vendor/three.module.min.js" } }
+  </script>
+  <script type="module" src="/static/js/headphone3d.js"></script>
+</body>
+</html>

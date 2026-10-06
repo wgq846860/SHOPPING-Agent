@@ -1,0 +1,62 @@
+# =============================================================================
+# Agentic Shopping Demo — 锁定依赖（S0.3，2026-09-29 实测冻结）
+# -----------------------------------------------------------------------------
+# 环境：Windows 10 x64 + Python 3.14.7（.venv）
+# 安装：.venv/Scripts/python.exe -m pip install -r requirements.txt
+# 说明：直接依赖带注释标明用途；其余为传递依赖，一并锁定以保证可复现。
+# 注意：PATH 上的 python 可能是 LibreOffice 自带解释器，务必显式使用
+#       .venv/Scripts/python.exe（见 README）。
+# =============================================================================
+
+# ---- 直接依赖 --------------------------------------------------------------
+
+# Web 框架与 ASGI 服务器（三页面托管 + /api/health）
+fastapi==0.141.1
+uvicorn==0.54.0
+pydantic==2.13.5
+
+# .env 本地配置加载（密钥不进代码；见 .env.example）
+python-dotenv==1.2.3
+
+# Agent 运行底座（S0.3 仅做起停/最小工具注册验证，S3 接真实模型）
+deepseek-harness-sdk==0.1.5rc1
+deepseek-harness-runtime-bin==0.1.5rc1
+
+# 测试（TestClient 经 starlette 1.7 使用 httpx2）
+pytest==9.1.1
+httpx2==2.13.1
+
+# TUI 启动器（LAUNCHER-1，2026-10-06 实测 Python 3.14.7 可用）
+textual==8.2.8
+
+# ---- 传递依赖（pip freeze 实测版本） ---------------------------------------
+
+annotated-doc==0.0.5
+annotated-types==0.8.0
+anyio==4.15.1
+certifi==2026.7.22
+click==8.5.0
+colorama==0.4.6
+h11==0.16.0
+httpcore==0.1.9
+httpcore2==2.13.1
+httptools==0.8.0
+idna==3.20
+linkify-it-py==2.2.0
+markdown-it-py==4.2.0
+mdit-py-plugins==0.6.1
+mdurl==0.1.2
+iniconfig==2.3.0
+packaging==26.3
+platformdirs==4.12.3
+pluggy==1.6.0
+pydantic_core==2.46.5
+Pygments==2.21.0
+PyYAML==6.0.3
+rich==15.0.0
+starlette==1.7.0
+truststore==0.10.4
+typing-inspection==0.4.4
+typing_extensions==4.16.0
+watchfiles==1.3.0
+websockets==17.1

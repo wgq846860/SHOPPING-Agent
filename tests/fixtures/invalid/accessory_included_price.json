@@ -1,0 +1,203 @@
+{
+  "entity_type": "offer",
+  "data_version": "small-v1",
+  "expect": "必须为 0",
+  "payload": {
+    "offer_id": "O027",
+    "product_id": "P009",
+    "merchant_id": "M003",
+    "currency": "CNY",
+    "price_cents": 74900,
+    "original_price_cents": null,
+    "shipping_fee_cents": 0,
+    "promotion": null,
+    "instant_discount_cents": 0,
+    "accessories": [
+      {
+        "accessory_code": "QG-DONGLE-USB",
+        "included": true,
+        "price_cents": 9900,
+        "stock": 6,
+        "delivery_in_same_package": true
+      }
+    ],
+    "stock": 30,
+    "item_condition": "new",
+    "delivery": {
+      "destination_region": "CN-SH",
+      "min_days": 3,
+      "max_days": 5,
+      "commitment_type": "estimated",
+      "conditions": "模拟第三方物流"
+    },
+    "return_policy_override": null,
+    "warranty_override": null,
+    "gift_return_conditions": null,
+    "valid_until": null,
+    "data_version": "small-v1",
+    "updated_at": "2026-09-29T10:00:00+08:00",
+    "field_sources": {
+      "product_id": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/O027",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "merchant_id": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/O027",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "currency": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/O027",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "price_cents": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/O027",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "original_price_cents": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/O027",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": "not_collected"
+      },
+      "shipping_fee_cents": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/O027",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "promotion": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/O027",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": "not_collected"
+      },
+      "instant_discount_cents": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/O027",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "accessories[0].included": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/O027",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "accessories[0].price_cents": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/O027",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "accessories[0].stock": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/O027",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "accessories[0].delivery_in_same_package": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/O027",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "stock": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/O027",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "item_condition": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/O027",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "delivery.destination_region": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/O027",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "delivery.min_days": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/O027",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "delivery.max_days": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/O027",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "delivery.commitment_type": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/O027",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "delivery.conditions": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/O027",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "return_policy_override": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/O027",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": "not_collected"
+      },
+      "warranty_override": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/O027",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": "not_collected"
+      },
+      "gift_return_conditions": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/O027",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": "not_collected"
+      },
+      "valid_until": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/O027",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": "not_collected"
+      }
+    }
+  }
+}

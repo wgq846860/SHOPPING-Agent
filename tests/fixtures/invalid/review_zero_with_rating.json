@@ -1,0 +1,132 @@
+{
+  "entity_type": "product_metrics",
+  "data_version": "small-v1",
+  "expect": "rating 必须为 null",
+  "payload": {
+    "product_id": "P001",
+    "rating": 4.5,
+    "review_count": 0,
+    "return_rate": null,
+    "popularity_score": 70,
+    "quality_score": 78,
+    "comfort_score": 80,
+    "anc_score": 85,
+    "sound_quality_score": 75,
+    "music_score": null,
+    "call_score": 70,
+    "commute_score": 82,
+    "gaming_score": null,
+    "portability_score": 72,
+    "fit_stability_score": null,
+    "measurements": null,
+    "data_version": "small-v1",
+    "updated_at": "2026-09-29T10:00:00+08:00",
+    "field_sources": {
+      "rating": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P001/metrics",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "手工fixture评分，非实测",
+        "missing_reason": null
+      },
+      "review_count": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P001/metrics",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "手工fixture评分，非实测",
+        "missing_reason": null
+      },
+      "return_rate": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P001/metrics",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "手工fixture评分，非实测",
+        "missing_reason": "not_collected"
+      },
+      "popularity_score": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P001/metrics",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "手工fixture评分，非实测",
+        "missing_reason": null
+      },
+      "quality_score": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P001/metrics",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "手工fixture评分，非实测",
+        "missing_reason": null
+      },
+      "comfort_score": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P001/metrics",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "手工fixture评分，非实测",
+        "missing_reason": null
+      },
+      "anc_score": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P001/metrics",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "手工fixture评分，非实测",
+        "missing_reason": null
+      },
+      "sound_quality_score": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P001/metrics",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "手工fixture评分，非实测",
+        "missing_reason": null
+      },
+      "music_score": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P001/metrics",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "手工fixture评分，非实测",
+        "missing_reason": "not_collected"
+      },
+      "call_score": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P001/metrics",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "手工fixture评分，非实测",
+        "missing_reason": null
+      },
+      "commute_score": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P001/metrics",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "手工fixture评分，非实测",
+        "missing_reason": null
+      },
+      "gaming_score": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P001/metrics",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "手工fixture评分，非实测",
+        "missing_reason": "not_collected"
+      },
+      "portability_score": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P001/metrics",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "手工fixture评分，非实测",
+        "missing_reason": null
+      },
+      "fit_stability_score": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P001/metrics",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "手工fixture评分，非实测",
+        "missing_reason": "not_collected"
+      },
+      "measurements": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P001/metrics",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "手工fixture评分，非实测",
+        "missing_reason": "not_collected"
+      }
+    }
+  }
+}

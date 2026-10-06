@@ -1,0 +1,473 @@
+{
+  "entity_type": "product",
+  "data_version": "small-v1",
+  "expect": "商品级 ANC=true",
+  "payload": {
+    "product_id": "P003",
+    "identity_key": "[\"quietgale\",\"hush2\",\"midnight\",\"rev1\",\"cn\"]",
+    "brand": "Quietgale",
+    "model": "Hush2",
+    "product_name": "Hush 2",
+    "variant": "midnight",
+    "hardware_revision": "rev1",
+    "market_region": "CN",
+    "category": "headphones",
+    "sub_category": "over_ear_headphones",
+    "form_factor": "over_ear",
+    "fit_style": "headband",
+    "open_ear": false,
+    "acoustic_design": "closed_back",
+    "wireless": true,
+    "connection_modes": [
+      {
+        "mode_id": "bt",
+        "transport": "bluetooth",
+        "audio_connector": null,
+        "microphone_connector": null,
+        "playback_supported": true,
+        "microphone_supported": true,
+        "active_noise_cancelling": false,
+        "requires_power": true,
+        "required_accessory_codes": []
+      }
+    ],
+    "bluetooth_version": "5.3",
+    "active_noise_cancelling": true,
+    "microphone": true,
+    "microphone_noise_reduction": true,
+    "mute_control": null,
+    "multipoint": false,
+    "max_active_devices": 1,
+    "compatibility": null,
+    "battery_applicability": "applicable",
+    "battery_specs": [
+      {
+        "battery_spec_id": "B1",
+        "hours": 30,
+        "basis": "single_charge",
+        "anc_state": "on",
+        "mode_id": "bt",
+        "test_conditions": "模拟50%音量LDAC听音"
+      },
+      {
+        "battery_spec_id": "B2",
+        "hours": 42,
+        "basis": "single_charge",
+        "anc_state": "off",
+        "mode_id": "bt",
+        "test_conditions": "模拟50%音量LDAC听音"
+      }
+    ],
+    "charging_methods": [
+      "usb_c"
+    ],
+    "fast_charge": {
+      "minutes": 15,
+      "playback_hours": 3,
+      "anc_state": "on",
+      "conditions": "模拟快充：充电15分钟增加3小时播放"
+    },
+    "weight_specs": [
+      {
+        "weight_spec_id": "W1",
+        "grams": 265,
+        "basis": "headset",
+        "conditions": "整副无配件"
+      }
+    ],
+    "foldable": true,
+    "ear_tip_sizes": [],
+    "earbud_dimensions_mm": null,
+    "water_resistance": null,
+    "sweat_use_statement": null,
+    "codec_support": [
+      "SBC",
+      "AAC",
+      "LDAC"
+    ],
+    "description": "模拟长途降噪耳机",
+    "image_path": null,
+    "data_version": "small-v1",
+    "updated_at": "2026-09-29T10:00:00+08:00",
+    "field_sources": {
+      "brand": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P003",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "model": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P003",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "product_name": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P003",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "variant": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P003",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "hardware_revision": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P003",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "market_region": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P003",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "category": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P003",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "sub_category": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P003",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "form_factor": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P003",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "fit_style": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P003",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "open_ear": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P003",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "acoustic_design": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P003",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "wireless": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P003",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "connection_modes[0].transport": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P003",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "connection_modes[0].audio_connector": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P003",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": "not_applicable"
+      },
+      "connection_modes[0].microphone_connector": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P003",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": "not_applicable"
+      },
+      "connection_modes[0].playback_supported": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P003",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "connection_modes[0].microphone_supported": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P003",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "connection_modes[0].active_noise_cancelling": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P003",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "connection_modes[0].requires_power": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P003",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "connection_modes[0].required_accessory_codes": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P003",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "bluetooth_version": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P003",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "active_noise_cancelling": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P003",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "microphone": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P003",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "microphone_noise_reduction": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P003",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "mute_control": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P003",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": "not_collected"
+      },
+      "multipoint": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P003",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "max_active_devices": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P003",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "compatibility": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P003",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": "not_collected"
+      },
+      "battery_applicability": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P003",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "battery_specs[0].hours": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P003",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "battery_specs[0].basis": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P003",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "battery_specs[0].anc_state": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P003",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "battery_specs[0].test_conditions": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P003",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "battery_specs[1].hours": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P003",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "battery_specs[1].basis": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P003",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "battery_specs[1].anc_state": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P003",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "battery_specs[1].test_conditions": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P003",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "charging_methods": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P003",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "fast_charge.minutes": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P003",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "fast_charge.playback_hours": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P003",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "fast_charge.anc_state": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P003",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "fast_charge.conditions": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P003",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "weight_specs[0].grams": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P003",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "weight_specs[0].basis": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P003",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "weight_specs[0].conditions": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P003",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "foldable": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P003",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "ear_tip_sizes": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P003",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "earbud_dimensions_mm": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P003",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": "not_collected"
+      },
+      "water_resistance": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P003",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": "not_collected"
+      },
+      "sweat_use_statement": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P003",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": "not_collected"
+      },
+      "codec_support": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P003",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "description": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P003",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "image_path": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/P003",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": "not_collected"
+      }
+    }
+  }
+}

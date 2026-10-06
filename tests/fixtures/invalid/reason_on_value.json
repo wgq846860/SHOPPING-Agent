@@ -1,0 +1,128 @@
+{
+  "entity_type": "merchant",
+  "data_version": "small-v1",
+  "expect": "非null叶子",
+  "payload": {
+    "merchant_id": "M001",
+    "merchant_name": "AudioWorld",
+    "merchant_type": "authorized",
+    "region": "CN",
+    "merchant_rating": 4.7,
+    "service_score": 86,
+    "shipping_score": 90,
+    "default_return_policy": {
+      "days": 30,
+      "opened_return_allowed": true,
+      "return_shipping_fee_cents": 0,
+      "conditions": "包装和配件齐全",
+      "exceptions": []
+    },
+    "default_warranty": {
+      "months": 12,
+      "provider": "AudioWorld",
+      "conditions": "模拟本地区保修"
+    },
+    "data_version": "small-v1",
+    "updated_at": "2026-09-29T10:00:00+08:00",
+    "field_sources": {
+      "merchant_name": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/M001",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": "not_collected"
+      },
+      "merchant_type": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/M001",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "region": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/M001",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "merchant_rating": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/M001",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "service_score": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/M001",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "shipping_score": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/M001",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "default_return_policy.days": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/M001",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "default_return_policy.opened_return_allowed": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/M001",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "default_return_policy.return_shipping_fee_cents": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/M001",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "default_return_policy.conditions": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/M001",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "default_return_policy.exceptions": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/M001",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "default_warranty.months": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/M001",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "default_warranty.provider": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/M001",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      },
+      "default_warranty.conditions": {
+        "source_type": "simulated",
+        "source_ref": "demo://small-v1/M001",
+        "observed_at": "2026-09-29T10:00:00+08:00",
+        "method": "固定fixture，非实测",
+        "missing_reason": null
+      }
+    }
+  }
+}
